@@ -1,7 +1,5 @@
-'use strict';
-
 import assign from 'object-assign';
-import Option from './option';
+import Option from './option.jsx';
 import React, {PropTypes} from 'react';
 
 
@@ -9,9 +7,10 @@ import React, {PropTypes} from 'react';
  * Select
  */
 class Select extends React.Component {
+
   constructor(props) {
     super(props);
-  };
+  }
 
   getOptions() {
     let options = [];
@@ -19,13 +18,13 @@ class Select extends React.Component {
       options.push(<Option {...option}/>);
     });
     return options;
-  };
+  }
 
   handleChange(event) {
     if (this.props.onChange) {
       this.props.onChange(event);
     }
-  };
+  }
 
   render() {
     var props = assign({}, this.props, {
@@ -42,7 +41,7 @@ class Select extends React.Component {
         {this.getOptions()}
       </select>
     );
-  };
+  }
 }
 
 Select.propTypes = {
@@ -50,19 +49,10 @@ Select.propTypes = {
   activeStyle: PropTypes.object,
   onChange: PropTypes.func,
   options: PropTypes.arrayOf(PropTypes.shape({
-    display: PropTypes.oneOf([
-      PropTypes.string,
-      PropTypes.number
-    ]).isRequired,
-    value: PropTypes.oneOf([
-      PropTypes.string,
-      PropTypes.number
-    ]).isRequired
+    display: PropTypes.string,
+    value: PropTypes.string
   })).isRequired,
-  selected: PropTypes.oneOf([
-    PropTypes.string,
-    PropTypes.number
-  ])
+  selected: PropTypes.string
 };
 
 Select.defaultProps = {

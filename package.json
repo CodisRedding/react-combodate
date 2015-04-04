@@ -10,7 +10,7 @@
   "homepage": "https://github.com/fourq/react-combodate/blob/master/README.md",
   "bugs": "https://github.com/fourq/react-combodate/issues",
   "scripts": {
-    "test": "jsxhint . && karma start",
+    "test": "jsxhint --es6module . && karma start",
     "examples": "webpack-dev-server --config examples/webpack.config.js --content-base examples"
   },
   "authors": [

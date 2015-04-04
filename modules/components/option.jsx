@@ -1,5 +1,3 @@
-'use strict';
-
 import React, {PropTypes} from 'react';
 
 
@@ -7,9 +5,10 @@ import React, {PropTypes} from 'react';
  * Option
  */
 class Option extends React.Component {
+
   constructor(props) {
     super(props);
-  };
+  }
 
   render() {
     return (
@@ -19,14 +18,8 @@ class Option extends React.Component {
 }
 
 Option.propTypes = {
-  display: PropTypes.oneOf([
-    PropTypes.string,
-    PropTypes.number
-  ]).isRequired,
-  value: PropTypes.oneOf([
-    PropTypes.string,
-    PropTypes.number
-  ]).isRequired
+  display: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired
 };
 
 Option.defaultProps = {
