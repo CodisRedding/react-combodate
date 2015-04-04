@@ -1,7 +1,7 @@
 {
   "name": "react-combodate",
   "version": "0.0.0",
-  "description": "",
+  "description": "Dropdown date and time picker",
   "main": "modules",
   "repository": {
     "type": "git",
@@ -10,7 +10,7 @@
   "homepage": "https://github.com/fourq/react-combodate/blob/master/README.md",
   "bugs": "https://github.com/fourq/react-combodate/issues",
   "scripts": {
-    "test": "jsxhint . && karma start --single-run",
+    "test": "jsxhint . && karma start",
     "examples": "webpack-dev-server --config examples/webpack.config.js --content-base examples"
   },
   "authors": [
@@ -18,17 +18,29 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "moment": "^2.9.0"
+    "moment": "^2.9.0",
+    "object-assign": "^2.0.0"
   },
   "peerDependencies": {
     "react": "0.13.x"
   },
   "devDependencies": {
+    "babel": "^5.0.7",
     "babel-core": "^5.0.7",
     "babel-loader": "^5.0.0",
+    "expect": "^1.6.0",
     "jsxhint": "^0.14.0",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-cli": "0.0.4",
+    "karma-firefox-launcher": "^0.1.4",
+    "karma-mocha": "^0.1.10",
+    "karma-sourcemap-loader": "^0.3.4",
+    "karma-webpack": "^1.5.0",
+    "mocha": "^2.2.1",
     "rf-changelog": "^0.4.0",
-    "webpack": "^1.7.3"
+    "webpack": "^1.7.3",
+    "webpack-dev-server": "^1.8.0"
   },
   "tags": [
     "react",

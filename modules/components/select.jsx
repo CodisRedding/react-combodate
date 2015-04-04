@@ -1,6 +1,6 @@
 'use strict';
 
-import assign from 'react/lib/Object.assign';
+import assign from 'object-assign';
 import Option from './option';
 import React, {PropTypes} from 'react';
 
