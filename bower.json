@@ -1,0 +1,27 @@
+{
+  "name": "react-combodate",
+  "version": "0.0.0",
+  "description": "",
+  "main": "",
+  "homepage": "https://github.com/fourq/react-combodate",
+  "authors": [
+    "Rocky Assad"
+  ],
+  "keywords": [
+    "react",
+    "combdate"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "specs",
+    "modules",
+    "examples",
+    "script",
+    "karma.conf.js",
+    "package.json",
+    "webpack.config.js"
+  ]
+}
