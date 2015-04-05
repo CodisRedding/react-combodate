@@ -5,3 +5,5 @@
 # react-combodate
 
 A react port of https://github.com/vitalets/combodate
+
+This component will display multiple Select elements dipicting the date value and template passed in.

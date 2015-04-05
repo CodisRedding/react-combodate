@@ -2,16 +2,24 @@ import React, {PropTypes} from 'react';
 
 
 // let _date = null;
+let _rendering;
 
-let Combodate = React.createClass({
+class Combodate extends React.Component {
+
+  selects() {
+
+  }
+
+  spacing() {
+    _rendering = this.props.template.replace(/ /g, '&nbsp;');
+  }
 
   render() {
     return (
       <div></div>
     );
   }
-
-});
+}
 
 Combodate.propTypes = {
   customClass: PropTypes.string,
